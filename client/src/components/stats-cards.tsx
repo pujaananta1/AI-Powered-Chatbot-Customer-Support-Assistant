@@ -2,8 +2,15 @@ import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageCircle, CheckCircle, Clock, Star } from "lucide-react";
 
+interface StatsData {
+  activeChats: number;
+  resolvedToday: number;
+  responseTime: string;
+  satisfaction: string;
+}
+
 export default function StatsCards() {
-  const { data: stats, isLoading } = useQuery({
+  const { data: stats, isLoading } = useQuery<StatsData>({
     queryKey: ["/api/stats"],
   });
 

@@ -114,6 +114,7 @@ export class MemStorage implements IStorage {
     const faq: Faq = {
       id,
       ...insertFaq,
+      keywords: insertFaq.keywords || [],
       usage_count: 0,
       created_at: new Date(),
       updated_at: new Date()
@@ -199,6 +200,7 @@ export class MemStorage implements IStorage {
     const message: Message = {
       id,
       ...insertMessage,
+      is_user: insertMessage.is_user ?? 1,
       created_at: new Date()
     };
     this.messages.set(id, message);
