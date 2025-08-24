@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(201, 20%, 12%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(201, 20%, 12%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(201, 20%, 12%);
+  --primary: hsl(212, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 17%, 94%);
+  --secondary-foreground: hsl(201, 20%, 12%);
+  --muted: hsl(210, 17%, 94%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --accent: hsl(152, 43%, 56%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 72%, 51%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(212, 100%, 50%);
+  --ai-bubble: hsl(220, 13%, 91%);
+  --text-color: hsl(201, 20%, 12%);
+  --chart-1: hsl(212, 100%, 50%);
+  --chart-2: hsl(152, 43%, 56%);
+  --chart-3: hsl(45, 93%, 58%);
+  --chart-4: hsl(142, 76%, 36%);
+  --chart-5: hsl(336, 75%, 40%);
+  --radius: 1.3rem;
+  --font-inter: 'Inter', sans-serif;
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(0, 0%, 9%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(0, 0%, 9%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: hsl(212, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 14%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --muted: hsl(0, 0%, 14%);
+  --muted-foreground: hsl(0, 0%, 63%);
+  --accent: hsl(152, 43%, 56%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --border: hsl(0, 0%, 14%);
+  --input: hsl(0, 0%, 14%);
+  --ring: hsl(212, 100%, 50%);
+  --ai-bubble: hsl(0, 0%, 14%);
+  --text-color: hsl(0, 0%, 95%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-[var(--font-inter)] antialiased;
+  }
+}
+
+@layer utilities {
+  .chat-widget {
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  }
+  
+  .message-slide-in {
+    animation: slideInMessage 0.3s ease-out;
+  }
+  
+  @keyframes slideInMessage {
+    from { 
+      opacity: 0; 
+      transform: translateY(10px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { 
+      transform: translateY(0px); 
+    }
+    50% { 
+      transform: translateY(-5px); 
+    }
+  }
+  
+  .typing-indicator {
+    animation: typing 1.4s infinite ease-in-out;
+  }
+  
+  .typing-indicator:nth-child(1) { 
+    animation-delay: 0s; 
+  }
+  .typing-indicator:nth-child(2) { 
+    animation-delay: 0.2s; 
+  }
+  .typing-indicator:nth-child(3) { 
+    animation-delay: 0.4s; 
+  }
+  
+  @keyframes typing {
+    0%, 60%, 100% { 
+      transform: translateY(0); 
+      opacity: 0.4; 
+    }
+    30% { 
+      transform: translateY(-10px); 
+      opacity: 1; 
+    }
+  }
+}
