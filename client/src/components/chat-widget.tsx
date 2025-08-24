@@ -124,7 +124,7 @@ export default function ChatWidget() {
                 <Bot className="text-white w-4 h-4" />
               </div>
               <div>
-                <h3 className="text-white font-medium text-sm" data-testid="text-chat-title">AI Support</h3>
+                <h3 className="text-white font-medium text-sm" data-testid="text-chat-title">AI-Powered-Chatbot</h3>
                 <p className="text-white text-opacity-80 text-xs" data-testid="text-chat-subtitle">Typically replies instantly</p>
               </div>
             </div>

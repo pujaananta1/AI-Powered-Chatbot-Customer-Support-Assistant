@@ -17,7 +17,7 @@ export default function Dashboard() {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Bot className="text-white w-4 h-4" />
               </div>
-              <h1 className="text-xl font-semibold text-text-color" data-testid="header-title">AI Support Dashboard</h1>
+              <h1 className="text-xl font-semibold text-text-color" data-testid="header-title">AI-Powered-Chatbot Dashboard</h1>
             </div>
             <div className="flex items-center space-x-4">
               <Button variant="ghost" size="sm" data-testid="button-notifications">
@@ -65,7 +65,7 @@ export default function Dashboard() {
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-text-color mb-4" data-testid="text-features-title">Why Choose Our AI Support?</h2>
+            <h2 className="text-3xl font-bold text-text-color mb-4" data-testid="text-features-title">Why Choose Our AI-Powered-Chatbot?</h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg" data-testid="text-features-subtitle">Get the help you need, when you need it</p>
           </div>
           
