@@ -1,6 +1,8 @@
 # AI-Powered Customer Support Chatbot
+[🌐 **Live Demo on Replit**](https://eea67cbb-f741-401e-bfb1-6fc0b53d94e4-00-1rqm1t2rnb3nq.janeway.repl.co/)
 
 A modern, intelligent customer support chatbot with an admin dashboard built using React, Express.js, and TypeScript. This application provides automated responses to user queries using rule-based AI logic, designed to reduce support costs and provide 24/7 assistance.
+
 
 ## ✨ Features
 
@@ -201,8 +203,4 @@ If you have any questions or need help with setup, please:
 - [ ] File upload support in chat
 - [ ] Voice message capabilities
 
----
-
-**Built with ❤️ by [Your Name]**
-
-*This project demonstrates modern full-stack development practices with TypeScript, React, and Express.js, focusing on user experience and maintainable code architecture.*
+##This project demonstrates modern full-stack development practices with TypeScript, React, and Express.js, focusing on user experience and maintainable code architecture.*
