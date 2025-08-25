@@ -1,5 +1,5 @@
 # AI-Powered Customer Support Chatbot
-[🌐 **Live Demo on Replit**](https://eea67cbb-f741-401e-bfb1-6fc0b53d94e4-00-1rqm1t2rnb3nq.janeway.repl.co/)
+[🌐 **Live Demo on Render**](https://ai-powered-chatbot-customer-support.onrender.com)
 
 A modern, intelligent customer support chatbot with an admin dashboard built using React, Express.js, and TypeScript. This application provides automated responses to user queries using rule-based AI logic, designed to reduce support costs and provide 24/7 assistance.
 
@@ -168,10 +168,8 @@ npm start
 
 ### Platform Deployment
 The application is configured for easy deployment on:
-- **Replit** - Ready to deploy with existing configuration
-- **Vercel** - Frontend with API routes
-- **Railway** - Full-stack deployment
-- **Heroku** - Container-based deployment
+- **Render** - Ready to deploy with existing configuration
+
 
 ## 🤝 Contributing
 
